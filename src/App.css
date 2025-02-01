@@ -1,0 +1,24 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+ 
+  html {
+    overflow-x: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+  }
+ 
+  body {
+    position: relative;
+    background: white
+  }
+  /*Scrollbar CSS*/
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+    background-color: #000;
+  }
