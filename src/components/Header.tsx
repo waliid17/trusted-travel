@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion'; 
+import { motion } from 'framer-motion';  
 import logo from '../assets/logo.png';
+
 
 export const Header = () => {
     const [scrolling, setScrolling] = useState(false);
