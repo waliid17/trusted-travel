@@ -11,7 +11,7 @@ export const Destinations = () => {
   });
 
   const [currentIndex, setCurrentIndex] = useState(0); // Track the current card index
-  const [startX, setStartX] = useState(null); // Track the start position of the swipe
+  const [startX, setStartX] = useState<number | null>(null); // Track the start position of the swipe
   const carouselRef = useRef(null); // Ref for the carousel container
 
   const cardVariants = {
@@ -34,11 +34,11 @@ export const Destinations = () => {
   };
 
   // Touch event handlers for swipe functionality
-  const handleTouchStart = (e) => {
+  const handleTouchStart = (e: React.TouchEvent) => {
     setStartX(e.touches[0].clientX); // Record the initial touch position
   };
 
-  const handleTouchMove = (e) => {
+  const handleTouchMove = (e: React.TouchEvent) => {
     if (!startX) return;
 
     const currentX = e.touches[0].clientX; // Get the current touch position
