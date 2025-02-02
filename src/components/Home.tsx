@@ -27,7 +27,7 @@ export const Home = () => {
         <motion.img
           src={trusted}
           alt="trusted"
-          className="w-[70vw] md:w-[40vw] lg:w-[30vw] h-auto mx-auto mt-[30px] sm:mt-[-20px]" // Responsive width
+          className="w-[70vw] md:w-[40vw] lg:w-[30vw] h-auto mx-auto mt-[-30px] sm:mt-[-20px]" // Responsive width
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeInOut" }}
