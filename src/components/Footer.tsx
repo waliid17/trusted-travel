@@ -3,21 +3,22 @@ import { motion } from "framer-motion";
 export const Footer = () => {
   return (
     <motion.footer
-      className="py-12 bg-gray-100" // Light background for a clean look
+      className="py-12 bg-gray-100"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Grid Layout for Footer Sections */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Us Section */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-black">About Us</h3> {/* Bold and black text */}
-            <p className="text-base text-gray-800"> {/* Black text for readability */}
+            <h3 className="text-xl font-bold mb-6 text-black">About Us</h3>
+            <p className="text-base text-gray-800">
               We are a leading travel agency dedicated to providing unforgettable experiences. Let us help you explore the world!
             </p>
           </motion.div>
@@ -28,10 +29,10 @@ export const Footer = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-black">Quick Links</h3> {/* Bold and black text */}
+            <h3 className="text-xl font-bold mb-6 text-black">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-base text-gray-800 hover:text-black transition-colors"> {/* Black text */}
+                <a href="#" className="text-base text-gray-800 hover:text-black transition-colors">
                   Home
                 </a>
               </li>
@@ -59,9 +60,9 @@ export const Footer = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-black">Contact Info</h3> {/* Bold and black text */}
+            <h3 className="text-xl font-bold mb-6 text-black">Contact Info</h3>
             <ul className="space-y-3">
-              <li className="text-base text-gray-800">123 Travel Street, City, Country</li> {/* Black text */}
+              <li className="text-base text-gray-800">123 Travel Street, City, Country</li>
               <li className="text-base text-gray-800">Email: info@travelagency.com</li>
               <li className="text-base text-gray-800">Phone: +123 456 7890</li>
             </ul>
@@ -73,7 +74,7 @@ export const Footer = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <h3 className="text-xl font-bold mb-6 text-black">Follow Us</h3> {/* Bold and black text */}
+            <h3 className="text-xl font-bold mb-6 text-black">Follow Us</h3>
             <div className="flex space-x-4">
               <a
                 href="#"
@@ -123,7 +124,7 @@ export const Footer = () => {
 
         {/* Copyright Section */}
         <motion.div
-          className="border-t border-gray-300 mt-8 pt-8 text-center text-base text-gray-800" 
+          className="border-t border-gray-300 mt-8 pt-8 text-center text-base text-gray-800"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
